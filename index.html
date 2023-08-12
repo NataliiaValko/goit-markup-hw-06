@@ -42,17 +42,30 @@
         <address class="contacts">
           <ul class="list contacts-list">
             <li class="contacts-item">
-              <a class="contacts-link link" href="mailto:info@devstudio.com"
+              <a
+                class="contacts-link contacts-link-email link"
+                href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li class="contacts-item">
-              <a class="contacts-link link" href="tel:+110001111111"
+              <a
+                class="contacts-link contacts-link-phone link"
+                href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -127,28 +140,43 @@
           <h2 class="main-title">What are we doing</h2>
           <ul class="list doing-list">
             <li class="doing-item">
-              <img
-                src="./images/doing/doing-1-1x.jpg"
-                alt="Desktop"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <img
+                  srcset="
+                    ./images/doing/doing-1-1158@1x.jpg 1x,
+                    ./images/doing/doing-1-1158@2x.jpg 2x
+                  "
+                  width="360"
+                  height="300"
+                  alt="Desktop"
+                />
+              </picture>
             </li>
             <li class="doing-item">
-              <img
-                src="./images/doing/doing-2-1x.jpg"
-                alt="Four phones"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <img
+                  srcset="
+                    ./images/doing/doing-2-1158@1x.jpg 1x,
+                    ./images/doing/doing-2-1158@2x.jpg 2x
+                  "
+                  width="360"
+                  height="300"
+                  alt="Four phones"
+                />
+              </picture>
             </li>
             <li class="doing-item">
-              <img
-                src="./images/doing/doing-3-1x.jpg"
-                alt="Phone in man's hand"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <img
+                  srcset="
+                    ./images/doing/doing-3-1158@1x.jpg 1x,
+                    ./images/doing/doing-3-1158@2x.jpg 2x
+                  "
+                  width="360"
+                  height="300"
+                  alt="Phone in man's hand"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -158,13 +186,29 @@
           <h2 class="main-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                src="./images/team/team-1-1x.jpg"
-                alt="Man with dark hair"
-                width="264"
-                height="260"
-              />
-
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-1-1158@1x.jpg 1x,
+                    ./images/team/team-1-1158@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-1-768@1x.jpg 1x,
+                    ./images/team/team-1-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="
+                    ./images/team/team-1-428@1x.jpg 1x,
+                    ./images/team/team-1-428@2x.jpg 2x
+                  "
+                  alt="Man with dark hair"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="team-name">Mark Guerrero</h3>
                 <p class="team-position">Product Designer</p>
@@ -217,12 +261,29 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/team/team-2-1x.jpg"
-                alt="Man with dark hair smiling"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-2-1158@1x.jpg 1x,
+                    ./images/team/team-2-1158@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-2-768@1x.jpg 1x,
+                    ./images/team/team-2-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="
+                    ./images/team/team-2-428@1x.jpg 1x,
+                    ./images/team/team-2-428@2x.jpg 2x
+                  "
+                  alt="Man with dark hair smiling"
+                />
+              </picture>
 
               <div class="team-description">
                 <h3 class="team-name">Tom Ford</h3>
@@ -276,13 +337,29 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/team/team-3-1x.jpg"
-                alt="Women with dark hair smiling"
-                width="264"
-                height="260"
-              />
-
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-3-1158@1x.jpg 1x,
+                    ./images/team/team-3-1158@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-3-768@1x.jpg 1x,
+                    ./images/team/team-3-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="
+                    ./images/team/team-3-428@1x.jpg 1x,
+                    ./images/team/team-3-428@2x.jpg 2x
+                  "
+                  alt="Women with dark hair smiling"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="team-name">Camila Garcia</h3>
                 <p class="team-position">Marketing</p>
@@ -335,13 +412,29 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/team/team-4-1x.jpg"
-                alt="Іmiling man with beard"
-                width="264"
-                height="260"
-              />
-
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-4-1158@1x.jpg 1x,
+                    ./images/team/team-4-1158@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-4-768@1x.jpg 1x,
+                    ./images/team/team-4-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="
+                    ./images/team/team-4-428@1x.jpg 1x,
+                    ./images/team/team-4-428@2x.jpg 2x
+                  "
+                  alt="Іmiling man with beard"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="team-name">Daniel Wilson</h3>
                 <p class="team-position">UI Designer</p>
@@ -616,6 +709,76 @@
         </form>
       </div>
     </div>
+    <div class="menu js-menu-container" id="mobile-menu">
+      <div class="menu-container">
+        <button class="menu-toggle menu-toggle-close js-close-menu">
+          <svg class="menu-toggle-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+
+        <ul class="menu-navigation list">
+          <li class="menu-navigation-item">
+            <a href="./index.html" class="menu-navigation-link link current"
+              >Studio</a
+            >
+          </li>
+          <li class="menu-navigation-item">
+            <a href="./portfolio.html" class="menu-navigation-link link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="menu-navigation-item">
+            <a href="#" class="menu-navigation-link link">Contacts</a>
+          </li>
+        </ul>
+        <ul class="list menu-contacts-list">
+          <li class="menu-contacts-item">
+            <a
+              href="tel:+110001111111"
+              class="link menu-contacts-link menu-contacts-tel"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="menu-contacts-item">
+            <a href="mailto:info@devstudio.com" class="link menu-contacts-link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="list menu-social-list">
+          <li class="menu-social-item">
+            <a href="https://www.instagram.com/" class="link menu-social-link">
+              <svg class="menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-item">
+            <a href="https://www.facebook.com/" class="link menu-social-link">
+              <svg class="menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-item">
+            <a href="https://twitter.com/" class="link menu-social-link">
+              <svg class="menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-x"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-item">
+            <a href="https://www.linkedin.com/" class="link menu-social-link">
+              <svg class="menu-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
