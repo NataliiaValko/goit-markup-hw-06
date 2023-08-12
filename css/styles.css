@@ -284,7 +284,9 @@ button {
   background-size: cover;
 }
 
-@media (min-resolution: 192dpi) {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1052,7 +1054,9 @@ button {
       url(../images/hero/hero-bg-768@1x.jpg);
   }
 
-  @media (min-resolution: 192dpi) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -1259,7 +1263,9 @@ button {
       url(../images/hero/hero-bg-1440@1x.jpg);
   }
 
-  @media (min-resolution: 192dpi) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
