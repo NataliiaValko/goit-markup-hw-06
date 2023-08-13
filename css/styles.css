@@ -1386,4 +1386,8 @@ button {
     border: 1px solid var(--accent-color);
     border-top: none;
   }
+
+  .features-text {
+    font-weight: 400;
+  }
 }
